@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'Mirra Auriolic';
+    src: url('./fonts/Mirra-Regular.woff2') format('woff2'),
+        url('./fonts/Mirra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font: 'Montserrat', sans-serif
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+    background-color: #e1e0d8;
+}
+
+.font-heading {
+    font-family: 'Mirra Auriolic';
+    font-size: 25em;
+    font-weight: 300;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4.5rem;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+.heading_left {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--font);
+    cursor: pointer;
+    margin-left:2rem
+}
+
+.heading_left:hover {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.heading_right>ul {
+    display: flex;
+}
+
+.heading_right>ul>li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--font);
+    cursor: pointer;
+}
+
+.heading_right>ul>li:hover {
+    font-style: italic;
+    font-weight: 800;
+    text-decoration:underline;
+}
+
+.landing_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing_page>img {
+    margin-top: 2rem;
+    width: 27%;
+}
+
+.tag_line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tag_line .child:not(:nth-last-child(1)) {
+    font-size: 8rem;
+    font-family: Mirra Auriolic;
+    margin: 10px;
+}
+
+.child>a {
+    text-decoration: none;
+    color: black;
+}
+
+.tag_line .child:nth-last-child(1) {
+    border: none;
+    background-color: transparent;
+    font-family: var(--font);
+    margin-left: 2rem;
+    font-size: 1em;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.tag_line .child:nth-last-child(1):hover {
+    font-style: oblique;
+}
+
+.line-border{
+    border: 1px solid black;
+    height: 1px;
+    width: calc(100% - 9rem);
+    margin: 3rem auto;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+#img {
+    width: 28%;
+    margin-right: 4rem;
+}
+
+.course-block {
+    display: flex;
+    margin: 0 4.5rem;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.course-content>p {
+    font-family: 'Mirra Auriolic';
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.course-content>.p1 {
+    margin-bottom: 2rem;
+    font-family: var(--font);
+}
+
+.course-content>.p2 {
+    font-family: var(--font);
+}
+
+.about {
+    margin: 5rem 4.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.about_cont_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+    margin-top: 5rem
+}
+
+#whoami {
+    font-family: var(--font);
+    font-size: 1.5rem;
+}
+
+#name {
+    font-family: 'Mirra Auriolic';
+    font-size: 5rem;
+}
+
+.about_cont_2 {
+    border: 1px solid black;
+    display: flex;
+}
+
+.about>img {
+    width: 28%;
+    margin: 0 auto;
+}
+
+.about_cont_3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 15rem;
+    margin-right: 2rem;
+    padding-left: 3rem;
+}
+
+.dash {
+    font-family: var(--font);
+    margin-top: 0.5rem;
+
+}
+
+.para_content {
+    margin-top: 3rem;
+    font-family: var(--font);
+}
+
+.suitable_course {
+    display: flex;
+    margin: 1rem 4.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#suitable_course_heading {
+    margin: 1rem 4.5rem;
+    font-size: 3.5rem;
+    font-family: 'Mirra Auriolic';
+
+}
+
+.suitable_course_content {
+    display: flex;
+    gap: 5rem;
+}
+
+.content_sections {
+    margin-top: 30px;
+}
+
+.image1 {
+    background-image: url(images/maxim-tolchinskiy-7ba3yYPpeJY-unsplash.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image2 {
+    background-image: url(images/sergey-vinogradov-AI8kqhhJD9I-unsplash.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image3 {
+    background-image: url(images/dmitry-ganin-hu33f6c5Sfc-unsplash.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.number {
+    font-family: 'Mirra Auriolic';
+    font-size: 4rem;
+}
+
+.title {
+    font-family: var(--font);
+}
+
+.program{
+    display: flex;
+    align-items: center;
+    gap:5rem;
+    margin-left: 4.5rem;
+    margin-right:4.5rem;
+    margin-top: 7rem;
+}
+
+.program > .p {
+    margin: 0 0.5rem;
+    font-family: 'Mirra Auriolic';
+    font-size: 4rem;
+}
+
+.program > .line{
+    flex: 1;
+}
+
+.program-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-bottom: 7rem;
+}
+
+.box{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.box > p{
+    font-family: var(--font);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.box-list{
+    padding: 5px ;
+}
+
+.box-list > ul > li {
+    list-style: none;
+    margin-top: 1rem;
+    font-family: var(--font);
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.cost{
+    margin: 2rem 4.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cost-section-images{
+    flex: 1;
+    columns: 2;
+}
+
+.cost-section-images .masonry{
+    width: 100%;
+    margin-bottom: 10px ;
+}
+
+.cost-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex: 1;
+    gap: 1rem;
+}
+
+.cost-heading{
+    font-family: "Mirra Auriolic";
+    font-size: 7rem;
+}
+
+.cost-list > ul > li{
+    font-family: var(--font);
+    margin-top: 0.5rem;
+    list-style: none;
+    font-size: large;
+}
+
+.cost-price{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+}
+
+.cost-price > p:nth-child(1) {
+    font-family:"Mirra Auriolic";
+    font-size: 3rem;
+    margin-right: 1rem ;
+}
+
+.cost-price > .currency { 
+    font-family: var(--font);
+}
+
+.cost-list > button { 
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 50px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.cost-list > button:hover{
+    cursor: pointer;
+    font-style: oblique;
+    text-decoration: underline;
+    background-color: rgb(21, 21, 21);
+}
+
+.accordion{
+    cursor: pointer;
+}
+
+.faq{
+    margin-top: 8rem ;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-bottom: 12rem;
+}
+
+.faq_title{
+    margin: 10px;
+    font-family: var(--font);
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.faq_heading{
+
+    margin: 10px;
+    font-family: 'Mirra Auriolic';
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+.faq_content{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question{
+    border-top: 1.8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.question > p{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: var(--font);
+}
+
+.question .icon{
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    transition: transform 0.2s;
+}
+
+.icon > img{
+    width: 25px;
+    height: 25px;
+}
+
+.active-icon{
+    transform: rotate(-180deg);
+}
+
+.answer{
+    font-family: var(--font);
+    font-size: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.contact{
+    background-image: url(images/pexels-thiago-matos-4576085-copy.jpg);
+    background-position: center; /*Center the imag */
+    background-size: cover; /* Resize the image to cover the div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+}
+
+.contact_heading { 
+    color: white;
+    font-family: 'Mirra Auriolic';
+    font-size: 3rem;
+    margin-top:6em;
+    margin-bottom: 3rem;
+} 
+
+.button{
+    border: 0.8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; 
+    color:#000;
+    font-family: var(--font);
+    font-size: 15px;
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+}
+
+.button > img {
+    width: 20px;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
